@@ -26,26 +26,29 @@ namespace Biblioteca.Models
             }
         }
 
-        // public void Editar(Usuario usuario)
-        // {
-        //     using(BibliotecaContext bc = new BibliotecaContext())
-        //     {
-        //         Usuario usuarios = bc.Usuarios.Find(usuario.Id);
+        public void Editar(Usuario usuario)
+        {
+            using(BibliotecaContext bc = new BibliotecaContext())
+            {
+                Usuario usuarios = bc.Usuarios.Find(usuario.id);
 
-        //         usuarios.Nome = usuario.Nome;
-        //         usuarios.Login = usuario.Login;
-        //         usuarios.Senha = usuario.Senha;
-        //         usuarios.Tipo = usuario.Tipo;
+                usuarios.Nome = usuario.Nome;
+                usuarios.Login = usuario.Login;
+                usuarios.Senha = usuario.Senha;
+                usuarios.Tipo = usuario.Tipo;
                
-        //          bc.SaveChanges();
+                 bc.SaveChanges();
                  
-        //     }
-        // }
+            }
+        }
 
-        // public void Excluir(int id)
-        // {
-        //     bc.Usuarios.Remove(bc.Usuarios.Find(id));
-        //     bc.SaveChanges();
-        // }
+        public void Excluir(int id)
+        {
+            using(BibliotecaContext bc = new BibliotecaContext())
+            {
+            bc.Usuarios.Remove(bc.Usuarios.Find(id));
+            bc.SaveChanges();
+            }
+        }
     }
 }
