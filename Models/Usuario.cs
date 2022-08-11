@@ -4,9 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Biblioteca.Models
-{
+{ //criado usuario p/ novos usuarios logados
     public class Usuario
     {
-        
+        public static int ADMIN = 0;
+        public static int PADRAO = 1;
+
+        public int id {get; set; }
+        public string Nome {get; set; }
+        public string Login {get; set; }
+        public string Senha {get; set; }
+        public int Tipo {get; set; }
+
     }
 }

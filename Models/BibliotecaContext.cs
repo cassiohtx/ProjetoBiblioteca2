@@ -12,5 +12,8 @@ namespace Biblioteca.Models
 
         public DbSet<Livro> Livros {get; set;}
         public DbSet<Emprestimo> Emprestimos {get; set;}
+
+        //definir a nova tabela a ser criada
+        public DbSet<Usuario> Usuarios {get; set; }
     }
 }
