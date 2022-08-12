@@ -33,7 +33,7 @@
                 <th>Data Devolução</th>
                 <th>Livro</th>
                 <th>Autor</th>
-                <th>Devolvido</th>
+                <th>Status</th>
                 <th></th>
                 </tr>
             </thead>
@@ -48,7 +48,13 @@
                     <td>@e.DataDevolucao.ToString("dd/MM/yyyy")</td>
                     <td>@e.Livro.Titulo</td>
                     <td>@e.Livro.Autor</td>
-                    <td>@e.Devolvido</td>
+                    @if(e.Devolvido == true)
+                    {
+                        <td>Devolvido</td>
+                    }
+                    else{
+                        <td>Não Devolvido</td>
+                    }
                     <td><a href="/Emprestimo/Edicao/@e.Id">Editar</a></td>
                 </tr>
                 }
