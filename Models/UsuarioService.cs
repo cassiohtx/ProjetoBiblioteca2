@@ -30,7 +30,7 @@ namespace Biblioteca.Models
         {
             using(BibliotecaContext bc = new BibliotecaContext())
             {
-                Usuario usuarios = bc.Usuarios.Find(usuario.id);
+                Usuario usuarios = bc.Usuarios.Find(usuario.Id);
 
                 usuarios.Nome = usuario.Nome;
                 usuarios.Login = usuario.Login;
@@ -42,6 +42,7 @@ namespace Biblioteca.Models
             }
         }
 
+        //  checar aqui Id
         public void Excluir(int id)
         {
             using(BibliotecaContext bc = new BibliotecaContext())

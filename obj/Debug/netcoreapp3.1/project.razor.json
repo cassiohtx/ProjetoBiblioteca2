@@ -14407,13 +14407,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Usuario\\EditarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\EditarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Usuario\\Permissao.cshtml",
+      "TargetPath": "Views\\Usuario\\Permissao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Livro\\Edicao.cshtml",
       "TargetPath": "Views\\Livro\\Edicao.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Usuario\\CadastrarUsuario.cshtml",
+      "TargetPath": "Views\\Usuario\\CadastrarUsuario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\cassi_7papfc6\\OneDrive\\Documentos\\Biblioteca\\Views\\Usuario\\ListaUsuarios.cshtml",
+      "TargetPath": "Views\\Usuario\\ListaUsuarios.cshtml",
       "FileKind": "mvc"
     },
     {
