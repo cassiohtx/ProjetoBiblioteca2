@@ -10,7 +10,7 @@ namespace Biblioteca.Controllers
     {
         public static void CheckLogin(Controller controller)
         {   
-            if(string.IsNullOrEmpty(controller.HttpContext.Session.GetString("user")))
+            if(string.IsNullOrEmpty(controller.HttpContext.Session.GetString("Login")))
             {
                 controller.Request.HttpContext.Response.Redirect("/Home/Login");
             }
@@ -50,7 +50,7 @@ namespace Biblioteca.Controllers
                 // Redirecionamento de página, criar página avisando que é necessário login
                 // de administrador para aplicar alterações e colocar um botão que 
                 // redireciona para a página de login
-                controller.Request.HttpContext.Response.Redirect("/Home/Login");
+                controller.Request.HttpContext.Response.Redirect("/Usuario/Permissao");
             }
         }
 
